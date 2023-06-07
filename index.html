@@ -80,28 +80,28 @@
       </div>
       <div id="logos" class="row justify-content-center">
         <div class="col-md-12 col-sm-4">
-          <i class="bx bxl-python bx-md bx-tada-hover"></i>
+          <i class="bx bxl-python bx-md bx-tada-hover" rel="tooltip" title="I know Python"></i>
         </div>
         <div class="col-md-12 col-sm-4">
-          <i class="bx bxl-javascript bx-md bx-tada-hover"></i>
+          <i class="bx bxl-javascript bx-md bx-tada-hover" rel="tooltip" title="I know JavaScript"></i>
         </div>
         <div class="col-md-12 col-sm-4">
-          <i class="bx bxl-vuejs bx-md bx-tada-hover"></i>
+          <i class="bx bxl-vuejs bx-md bx-tada-hover" rel="tooltip" title="I know Vue"></i>
         </div>
         <div class="col-md-12 col-sm-4">
-          <i class="bx bxl-html5 bx-md bx-tada-hover"></i>
+          <i class="bx bxl-html5 bx-md bx-tada-hover" rel="tooltip" title="I know HTML"></i>
         </div>
         <div class="col-md-12 col-sm-4">
-          <i class="bx bxl-css3 bx-md bx-tada-hover"></i>
+          <i class="bx bxl-css3 bx-md bx-tada-hover" rel="tooltip" title="I know CSS"></i>
         </div>
         <div class="col-md-12 col-sm-4">
-          <i class="bx bxl-bootstrap bx-md bx-tada-hover"></i>
+          <i class="bx bxl-bootstrap bx-md bx-tada-hover" rel="tooltip" title="I know Bootstrap"></i>
         </div>
         <div class="col-md-12 col-sm-4">
-          <i class="bx bxl-php bx-md bx-tada-hover"></i>
+          <i class="bx bxl-php bx-md bx-tada-hover" rel="tooltip" title="I know PHP"></i>
         </div>
         <div class="col-md-12 col-sm-4">
-          <i class="bx bxl-wordpress bx-md bx-tada-hover"></i>
+          <i class="bx bxl-wordpress bx-md bx-tada-hover" rel="tooltip" title="I know Wordpress"></i>
         </div>
       </div>
     </main>    
@@ -114,7 +114,10 @@
         typeSpeed: 100,
         backSpeed: 10,
         loop: false
-    });
+      });
+      $(document).ready(function(){
+        $("[rel=tooltip]").tooltip({ placement: 'top'});
+      });
     </script>
-  </body>
+  </body> 
 </html>
